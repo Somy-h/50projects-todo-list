@@ -36,7 +36,6 @@ function createTodoItemElement(todoText, completed = false) {
     const divEl = document.createElement("div");
     divEl.classList.add("todo-item");
     if (completed) divEl.classList.add("completed");
-    //divEl.setAttribute("data-hover", todoText)
     divEl.innerText = todoText;
     todoAddEventListeners(divEl);
     todoList.appendChild(divEl);
